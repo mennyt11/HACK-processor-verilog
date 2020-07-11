@@ -1,1 +1,8 @@
+#folders
 work/
+
+#other extensions
+*.cr.mti
+*.mpf
+*.v.bak
+*.wlf
