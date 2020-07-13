@@ -6,7 +6,7 @@ module inst_mem
 	 input clk,
 	 output reg[15:0] q);
 
-reg[15:0] ram[0:2**15];
+reg[15:0] ram[0:2**16-1];
 
 
 initial begin
