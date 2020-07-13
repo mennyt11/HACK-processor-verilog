@@ -1,8 +1,10 @@
 #folders
 work/
 
+code.txt
 #other extensions
 *.cr.mti
 *.mpf
 *.v.bak
 *.wlf
+*.bak
