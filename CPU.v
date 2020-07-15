@@ -7,7 +7,7 @@ module CPU(
 	input [15:0] inst,inM,
 	input reset,clk,
 	output[15:0] outM,addressM,
-	output [15:0] pc_out,
+	output [15:0] pc_out,Areg,Dreg,
 	output wen);
 
 wire [15:0] w_out;	//alu output
@@ -28,6 +28,8 @@ assign PCinc=~PCload;
 assign outM=w_out;			//ALU output
 assign wen=inst[15] & inst[3];		//wen output
 assign addressM=Aout;			//addressM output
+assign Areg=Aout;
+assign Dreg=Dout;
 
 register16 A(.d(Ain),.clk(clk),.reset(reset),.load(ALoad),.q(Aout));
 
