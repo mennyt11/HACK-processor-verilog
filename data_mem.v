@@ -12,10 +12,18 @@ module data_mem
 
 reg[15:0] ram[0:2**16-1];
 
+initial begin
+	//readmemb for binary file and readmemh for hexadecimal file
+	$readmemb("InitialRam.txt",ram); 
+end
+ 
+
 always @(negedge clk) begin
 	
-	if(we==1)
+	if(we==1) begin
 		ram[address]=d;
+		$display("written ram[%h]=%h",address,d);
+	end
 end
 
 assign q=ram[address];
