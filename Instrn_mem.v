@@ -11,7 +11,7 @@ reg[15:0] ram[0:2**16-1];
 
 initial begin
 	//readmemb for binary file and readmemh for hexadecimal file
-	$readmemh("code.txt",ram); 
+	$readmemb("code.txt",ram); 
 end
  
 always @(posedge clk) begin
