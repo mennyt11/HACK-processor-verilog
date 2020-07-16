@@ -99,7 +99,7 @@ Examples:
 
 Performs a computation on the CPU (arithmetic or bit-wise logic) and stores it into a destination register or memory location, and then (optionally) JUMPS to an instruction memory location that is usually addressed by a value or a Symbol (label).
 
-![C-Instructions Reference](assets/c_instructions_reference.png "C-Instructions Reference")
+![C-Instructions Reference](diagrams/c_instructions.png "C-Instructions Reference")
 
 ## Sample Usage
 
