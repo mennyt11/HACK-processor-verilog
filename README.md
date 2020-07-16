@@ -2,7 +2,7 @@
 
 HACK.v is a 16 bit RISC processor in Verilog. HACK is a microarchitecture specified in *Elements of Computing System* by Noam Nisan and Shimon Schocken which is informally known as [nand2tetris](http://www.nand2tetris.org). The authors implemented the architecture in an indigenous HDL(Hardware Description Language), but HACK.v is an implementation of the architecture in much standard **Verilog**.  
 
-##Contents
+## Contents
 
 -[Description](#Description)
   -[HACK microarchitecture](#HACK-microarchitecture)
@@ -13,19 +13,19 @@ HACK.v is a 16 bit RISC processor in Verilog. HACK is a microarchitecture specif
   -[C Instructions](#C-Instructions)
 -[Sample Usage](#Sample-Usage)
 
-##Description
+## Description
 
 HACK.v is a structural implementation of the HACK microarchitecture. This is modified *Von Neumann* architecture with separate instruction memory and data memory. The main components being the Instruction memory, CPU and Data memory.
 
-###HACK microarchitecture
+### HACK microarchitecture
 
 ![HACK microarchitecture](/diagrams/microarchitecture.png "HACK microarchitecture")
 
-###HACK CPU
+### HACK CPU
 
 ![HACK CPU](/diagrams/CPU.png "HACK CPU")
 
-###Files Description
+### Files Description
 
 The files are listed in the logical order they were created and reside in **/HACK verilog** directory
 1. **Mux16_2way.v:** 2 input 16 bit Multiplexer
@@ -39,7 +39,7 @@ The files are listed in the logical order they were created and reside in **/HAC
 9. **HACK_sim.v:** Simulation File to be executed
 10. **\*tb.v:** all these files are testbenches for checking their corresponding functionality
 
-##HACK Assembly Language
+## HACK Assembly Language
 
 The HACK assembly Language mainly consists of two types of instructions A-type and C-type.
 
@@ -101,13 +101,13 @@ Performs a computation on the CPU (arithmetic or bit-wise logic) and stores it i
 
 ![C-Instructions Reference](assets/c_instructions_reference.png "C-Instructions Reference")
 
-##Sample Usage
+## Sample Usage
 
-###Requirements
+### Requirements
 
 A Verilog Simulator like ModelSim
 
-###Execution
+### Execution
 
 1. Download all the verilog files into a single folders.
 2. Create a file **code.txt** and type in the machine language(binary) instructions inside it.
@@ -118,7 +118,7 @@ A Verilog Simulator like ModelSim
 7. Run the Simulation
 8. Any value written in RAM will be displayed in the simulation output window.
 
-###Sample Assembly Source Code
+### Sample Assembly Source Code
 
 ```asm
 // Computes 1+2+...+RAM[0]
@@ -152,7 +152,7 @@ M=D // RAM[1] = the sum
 0;JMP
 
 ```
-###code.txt
+### code.txt
 
 machine code of the above source code
 
@@ -182,7 +182,7 @@ machine code of the above source code
 0000000000010110
 1110101010000111
 ```
-###InitialRam.txt
+### InitialRam.txt
 
 RAM[0] is initialised with 10 (0000000000001010)
 ```binary
