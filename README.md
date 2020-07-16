@@ -1,17 +1,17 @@
 # HACK.v
 
-HACK.v is a 16 bit RISC processor in Verilog. HACK is a microarchitecture specified in *Elements of Computing System* by Noam Nisan and Shimon Schocken which is informally known as [nand2tetris](http://www.nand2tetris.org). The authors implemented the architecture in an indigenous HDL(Hardware Description Language), but HACK.v is an implementation of the architecture in much standard **Verilog**.  
+HACK.v is a **16 bit RISC processor** in Verilog. HACK is a microarchitecture specified in *Elements of Computing System* by Noam Nisan and Shimon Schocken which is informally known as [nand2tetris](http://www.nand2tetris.org). The authors implemented the architecture in an indigenous HDL(Hardware Description Language), but HACK.v is an implementation of the architecture in much standard HDL, **Verilog**.  
 
 ## Contents
 
--[Description](#Description)
-  -[HACK microarchitecture](#HACK-microarchitecture)
-  -[HACK CPU](#HACK-CPU)
-  -[Files Description](#Files-Description)
--[HACK Assembly Language](#HACK-Assembly-Language)
-  -[A Instructions](#A-Instructions)
-  -[C Instructions](#C-Instructions)
--[Sample Usage](#Sample-Usage)
+- [Description](#Description)
+  - [HACK microarchitecture](#HACK-microarchitecture)
+  - [HACK CPU](#HACK-CPU)
+  - [Files Description](#Files-Description)
+- [HACK Assembly Language](#HACK-Assembly-Language)
+  - [A Instructions](#A-Instructions)
+  - [C Instructions](#C-Instructions)
+- [Sample Usage](#Sample-Usage)
 
 ## Description
 
